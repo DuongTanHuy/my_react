@@ -10,11 +10,13 @@ function App() {
     document.title = "Duong Tan Huy";
   }
   demo();
-  return <div className="root">
-    {/* <HackerNews></HackerNews> */}
-    <ToggleTictactoe></ToggleTictactoe>
-  </div>;
-  
+  return (
+    <div className="root">
+      {/* <HackerNews></HackerNews> */}
+      <ToggleTictactoe></ToggleTictactoe>
+    </div>
+  );
 }
 
 export default App;
+// hello
