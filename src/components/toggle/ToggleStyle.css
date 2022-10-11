@@ -1,0 +1,38 @@
+.toggle {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 100rem;
+    margin: 25px;
+    cursor: pointer;
+    transition: all 0.2s linear; /* khi co bat ki thay doi gi tren class nay no se thay doi trong 0.2 giay */
+  }
+  
+  .toggle.active {
+    background-color: chartreuse;  /* chi khi active moi thay doi mau nen cua toggle*/
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100rem;
+    transition: all 0.2s linear;
+  }
+  
+  .spinner.active {
+    transform: translateX(50px);
+  }
+  
+  /* .toggle-control {
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  
+  .toggle-control > * {
+    cursor: pointer;
+  } */
+  

@@ -1,0 +1,89 @@
+.game-board {
+  margin: 25px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  padding: 2px;
+  border: 5px solid #333;
+  /* border-collapse: collapse; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("https://salt.tikicdn.com/ts/tmp/d9/d6/59/5bf3b9d3f3d78b311680647cb31e326d.jpg");
+  background-size: 100% auto;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.game-cell {
+  border: 2px solid brown;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: 1px 1px 2px brown;
+}
+
+.is-X {
+  color: rgb(121, 7, 7);
+}
+
+.is-O {
+  color: rgb(10, 97, 10);
+}
+
+.game-cell:hover {
+  border: none;
+  box-shadow: 0px 0px 0px brown;
+}
+
+.game-winner {
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  color: #333;
+  text-shadow: 2px 2px #ccc;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 200px;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #333;
+  margin: 20px;
+  position: absolute;
+  left: 155px;
+  top: -220px;
+  transition: top 0.2s linear;
+}
+
+.game-winner.have {
+  top: 220px;
+}
+
+.game-button {
+  margin: 25px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #6a5af9;
+  font-size: 16px;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  position: absolute;
+  top: -98px;
+}
+
+.game-button:hover {
+  opacity: 0.5;
+}
+
+.Root {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
