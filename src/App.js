@@ -1,5 +1,5 @@
 import "./App.css";
-import HackerNews from "./components/news/HackerNews";
+import HackerNewsRe from "./components/news/HackerNewsRe";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -11,7 +11,7 @@ function App() {
   demo();
   return (
     <div className="root">
-      <HackerNews></HackerNews>
+      <HackerNewsRe></HackerNewsRe>
     </div>
   );
 }
