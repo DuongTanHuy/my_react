@@ -19,15 +19,15 @@ const Toggle = (props) => {
   //   console.log(a, b);
   const [on, setOn] = useState(false); // on = false, setOn = function
 
-  let sendData = () => {
-    props.func(!on);
-  };
+  // let sendData = () => {
+  //   props.func(!on);
+  // };
   return (
     <div
       style={{ marginLeft: "200px" }}
       onClick={() => {
         setOn((on) => !on);
-        sendData();
+        // sendData();
       }}
     >
       <div className={`toggle ${on ? "active" : ""}`}>
