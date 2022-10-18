@@ -3,7 +3,7 @@ import useHackerNew from "../../hooks/useHackerNew";
 // import lodash from "lodash";
 
 const HackerNewsWithHook = () => {
-  const [state, dispatch] = useHackerNew();
+  const {state, dispatch} = useHackerNew();
 
   return (
     <div className="bg-white mx-auto mt-5 p-5 rounded-lg shadow-md w-2/4 ">
