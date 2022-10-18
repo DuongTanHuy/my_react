@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Dropdown from "./components/Dropdown";
+import MenuSideBar from "./components/MenuSideBar";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -8,7 +8,7 @@ import Dropdown from "./components/Dropdown";
 function App() {
   return (
     <div className="root">
-      <Dropdown></Dropdown>
+      <MenuSideBar></MenuSideBar>
     </div>
   );
 }

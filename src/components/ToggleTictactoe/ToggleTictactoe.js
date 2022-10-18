@@ -11,7 +11,7 @@ const ToggleTictactoe = () => {
 
   return (
     <div className="w-full">
-      <div className="mx-auto" onClick={() => setMessage(!message)}>
+      <div className="mx-auto" onClick={() => setMessage(!message)}> // neu chi ghi setMessage trong onClick se bao loi
         <Toggle></Toggle>
         {<Game isActive={message}></Game>}
         {console.log(message)}
