@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Form from "./components/form/Form";
+import MovieSearchApp from "./components/MovieSearchApp";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -8,7 +8,7 @@ import Form from "./components/form/Form";
 function App() {
   return (
     <div className="root">
-      <Form></Form>
+      <MovieSearchApp></MovieSearchApp>
     </div>
   );
 }
