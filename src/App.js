@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import MenuSideBar from "./components/MenuSideBar";
+import Form from "./components/form/Form";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -8,7 +8,7 @@ import MenuSideBar from "./components/MenuSideBar";
 function App() {
   return (
     <div className="root">
-      <MenuSideBar></MenuSideBar>
+      <Form></Form>
     </div>
   );
 }
