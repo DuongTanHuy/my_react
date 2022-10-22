@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import MovieSearchApp from "./components/MovieSearchApp";
+import SignUpFormHook from "./components/form/SignUpFormHook";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -8,7 +8,7 @@ import MovieSearchApp from "./components/MovieSearchApp";
 function App() {
   return (
     <div className="root">
-      <MovieSearchApp></MovieSearchApp>
+      <SignUpFormHook></SignUpFormHook>
     </div>
   );
 }
