@@ -23,5 +23,6 @@ export default function useClickOutside(status = false, dom) {
   return {
     show,
     domRef,
+    setShow
   };
 }

@@ -1,6 +1,5 @@
-import React from "react";
 import "./App.css";
-import SignUpFormHook from "./components/form/SignUpFormHook";
+import ToolTip from "./components/modal/ToolTip";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -8,7 +7,10 @@ import SignUpFormHook from "./components/form/SignUpFormHook";
 function App() {
   return (
     <div className="root">
-      <SignUpFormHook></SignUpFormHook>
+      <ToolTip
+        Children="JSX attributes must only be assigned a non-empty expression."
+        text="Hover me!"
+      ></ToolTip>
     </div>
   );
 }

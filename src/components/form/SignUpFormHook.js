@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Controller, useForm } from "react-hook-form";
+import { useController, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import axios from "axios";
@@ -27,7 +27,7 @@ const SignUpFormHook = () => {
     forms.reset({
       firstName: "",
       lastName: "",
-      email: "",
+      // email: "",
     });
     forms.resetField("email");
     console.log(values);
@@ -151,7 +151,9 @@ const SignUpFormHook = () => {
           className="w-full p-5 bg-green-500 rounded-lg text-white mt-4 font-semibold"
         >
           {forms.formState.isSubmitting ? (
-            <div className="mx-auto w-5 h-5 border-2 border-white rounded-full animate-spin border-t-transparent"></div>
+            <div className="flex items-center mx-auto w-6 h-6 border-2 animate-spin border-white rounded-full border-l-transparent border-r-transparent">
+              <div className="mx-auto w-4 h-4 border-2 animate-spin border-white rounded-full  border-t-transparent border-b-transparent"></div>
+            </div>
           ) : (
             "Submit"
           )}
@@ -161,20 +163,35 @@ const SignUpFormHook = () => {
   );
 };
 
+// const MyInput = ({ control, ...props }) => {
+//   return (
+//     <Controller
+//       name={props.name}
+//       control={control}
+//       defaultValue=""
+//       render={({ field }) => (
+//         <input
+//           {...props}
+//           {...field}
+//           className="p-4 rounded-md border border-gray-400"
+//         />
+//       )}
+//     ></Controller>
+//   );
+// };
+
 const MyInput = ({ control, ...props }) => {
+  const { field } = useController({
+    control,
+    name: props.name,
+    defaultValue: "",
+  });
   return (
-    <Controller
-      name={props.name}
-      control={control}
-      defaultValue=""
-      render={({ field }) => (
-        <input
-          {...props}
-          {...field}
-          className="p-4 rounded-md border border-gray-400"
-        />
-      )}
-    ></Controller>
+    <input
+      {...props}
+      {...field}
+      className="p-4 rounded-md border border-gray-400"
+    />
   );
 };
 
