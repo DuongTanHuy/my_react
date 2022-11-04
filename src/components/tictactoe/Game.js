@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import calculateWinner from "./FindWinner";
 import Board from "./Board";
 import "./GameStyle.css";
+import { useEffect } from "react";
 
 const Game = (props) => {
   // const [board, setBoard] = useState(Array(9).fill(null));

@@ -1,5 +1,5 @@
 import "./App.css";
-import ToolTip from "./components/modal/ToolTip";
+import ModalMain from "./components/modal/ModalMain";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -7,10 +7,7 @@ import ToolTip from "./components/modal/ToolTip";
 function App() {
   return (
     <div className="root">
-      <ToolTip
-        Children="JSX attributes must only be assigned a non-empty expression."
-        text="Hover me!"
-      ></ToolTip>
+      <ModalMain></ModalMain>
     </div>
   );
 }

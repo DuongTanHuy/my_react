@@ -27,6 +27,7 @@ const Toggle = (props) => {
       style={{ marginLeft: "200px" }}
       onClick={() => {
         setOn((on) => !on);
+        props.handleMessage();
         // sendData();
       }}
     >

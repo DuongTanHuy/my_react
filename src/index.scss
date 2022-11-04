@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    min-height: 300vh;
+    min-height: 100vh;
   }
 }
 
@@ -24,4 +24,27 @@
   to {
     background-position: -200%;
   }
+}
+
+.content {
+  transition: all 0.3s ease;
+}
+
+.zoom-enter .content {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.zoom-enter-active .content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.zoom-exit .content {
+  opacity: 1;
+}
+
+.zoom-exit-active .content {
+  opacity: 0;
+  transform: scale(0);
 }
