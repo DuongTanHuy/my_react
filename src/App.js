@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
-import HandleValue from "./components/advanced-react/render-props/HandleValue";
-import Title from "./components/advanced-react/render-props/Title";
+import React from "react";
+import Main from "./components/advanced-react/control-props/Main";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -9,10 +8,9 @@ import Title from "./components/advanced-react/render-props/Title";
 
 function App() {
   return (
-    <Fragment>
-      <HandleValue></HandleValue>
-      <Title>{() => <h1>Hello</h1>}</Title>
-    </Fragment>
+    <div className="w-full max-w-[600px] mx-auto">
+      <Main></Main>
+    </div>
   );
 }
 
