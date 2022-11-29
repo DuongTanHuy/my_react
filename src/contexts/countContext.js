@@ -2,13 +2,13 @@
 // can phan biet rach roi giua component(name: Upper...), function(name: lower...), hooks(name: use...)
 
 // custom hooks cung giong nhu fuction no duoc dinh nghia bang functions,
-// return ra mot gia tri cu the duoc khai bao trong components khac nhu sau: const [useDemo, ...] = useHooks();
-// va ca gia tri or function con nam trong cung mot fuction cha co ten cua file .js
+// return ra mot gia tri cu the duoc khai bao trong components khac nhu sau: const [useDemo, ...] = useHooks(); su dung khi lien quan den Hooks da dc dinh nghia san (useState...)
+// tat ca gia tri or function con nam trong cung mot fuction cha co ten cua file .js
 
 // day la cach dinh nghia mot custom hooks
 // import { createContext, useContext, useState } from "react";
 
-// export default function CountContext() {
+// export default function useCountContext() {
 //   const CountContext = createContext();
 
 //   const CountProvider = (props) => {

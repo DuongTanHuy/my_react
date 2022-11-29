@@ -12,7 +12,7 @@ const MovieSearchApp = () => {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [url, setUrl] = useState(
-    `https://api.themoviedb.org/3/search/movie?api_key=ae55f04e216bce6e59920baaaaee84b5&query='${query}'`
+    ` `
   );
   const [error, setError] = useState("");
   const [movies, setMovies] = useState([]);

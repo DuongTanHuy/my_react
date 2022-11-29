@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 const BlogPage = () => {
   const [search, setSearch] = useSearchParams();
   console.log(search.get("search"));
-  useEffect(() => setSearch({ search: "Huy" }), []);
+  useEffect(() => setSearch({ search: "Huy" }), [setSearch]);
   return <div>This is a BlogPage</div>;
 };
 

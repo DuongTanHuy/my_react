@@ -1,10 +1,6 @@
-import "./App.css";
-import React from "react";
-import Nav from "./components/Nav";
-import { Route, Routes } from "react-router-dom";
-import BlogPage from "./components/BlogPage";
-import ProfilePage from "./components/ProfilePage";
-import BlogPageDetail from "./components/BlogPageDetail";
+import React, { Fragment } from "react";
+import HandleValue from "./components/advanced-react/render-props/HandleValue";
+import Title from "./components/advanced-react/render-props/Title";
 
 // export const thi ten doi tuong phai nam trong {}
 // export default thi ten doi tuong khong nam trong {}
@@ -13,17 +9,10 @@ import BlogPageDetail from "./components/BlogPageDetail";
 
 function App() {
   return (
-    <div className="root">
-      <Routes>
-        <Route path="/" element={<Nav></Nav>}>
-          <Route path="/" element={<>Home Page</>}></Route>
-          <Route path="/blog" element={<BlogPage></BlogPage>}></Route>
-          <Route path="/blog/:slug" element={<BlogPageDetail></BlogPageDetail>}></Route>
-          <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
-        </Route>
-        <Route path="*" element={<div>This is a 404 page</div>}></Route>
-      </Routes>
-    </div>
+    <Fragment>
+      <HandleValue></HandleValue>
+      <Title>{() => <h1>Hello</h1>}</Title>
+    </Fragment>
   );
 }
 
